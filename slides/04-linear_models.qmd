@@ -1,0 +1,89 @@
+---
+title: "{{< meta course_title >}}"
+deck_id: d04
+deck_title: "{{< meta decks.d04.title >}}"
+deck_short_title: "{{< meta decks.d04.short_title >}}"
+
+include-after-body:
+  - text: |
+      <script id="deck-nav-meta" type="application/json">
+      {
+        "deck_prev_file": "{{< meta decks.d03.file >}}",
+        "deck_prev_title": "{{< meta decks.d03.title >}}",
+        "deck_next_file": "{{< meta decks.d05.file >}}",
+        "deck_next_title": "{{< meta decks.d05.title >}}"
+      }
+      </script>
+
+subtitle: |
+  <span class="deck-meta">Spring 2026 material · revision for Spring 2027 pending</span><br>
+  <span class="deck-title">{{< meta deck_title >}}</span><br>
+  <span class="deck-meta">{{< meta texts.cb.short >}} Ch. 11<br>
+  Test 2 on 4/7 on <br>
+  <span class="indent"> Optimality of Estimators, </span> <br>
+  <span class="indent">Hypothesis Testing, & </span> <br>
+  <span class="indent">Ordinary Least Squares Through Inference</span>
+  </span>
+  </span>
+format:
+  revealjs:
+    footer: "© 2027 Fred J. Hickernell · MATH 563 · Prior-semester material awaiting revision"
+---
+
+# Linear Models
+
+<h3>Until now</h3>
+- We have been focused on inference for population parameters, such as $\mu$, $\sigma^2$, $p$, $\lambda$, ...
+
+- Nothing influenced our random variable $Y$ except for the randomness in the data generating process
+
+<h3>Moving forward</h3>
+
+- [Response/Output/Dependent Variable]{.alert} $Y$
+
+- [Explained/Predicted]{.alert} by a vector of [Predictors/Explanatory Variables/Inputs/Independent Variables]{.alert} $\vx$
+
+  - The $x_j$ may be
+
+    - Functions of other variables or each other
+
+    - Categorical variables encoded as dummy variables
+
+- $\Ex(Y \mid \vx)$ depends on $\vx$ through a linear function $\vx^\top \vbeta$, where $\vbeta$ is a vector of unknown parameters
+
+
+## Types of linear models
+
+- [Ordinary least squares (OLS)](#lsqregress) $Y = \vx^\top \vbeta + \varepsilon$ with $\Ex(\varepsilon) = 0$ and $\cov(\varepsilon) = \sigma^2 \mI$
+
+  - [Solution, geometry, unbiasedness](#lsqregress)
+
+  - [Inference for model parameters and predictions](#ols_inference)
+
+  - [Diagnostics](#ols_diagnostics)
+
+  - [Model selection](#ols_selection)
+
+
+- [One-way analysis of variance (ANOVA)](#oneway_anova) $Y_{ij} = \mu_i + \varepsilon_{ij}$ with $\Ex(\varepsilon_{ij}) = 0$ and $\cov(\varepsilon_{ij}) = \sigma^2 \mI$
+
+- [Logistic regression](#logistic-glm) and other generalized linear models
+
+- [Gaussian process regression](#gauss_process) [non-parametric method]{.alert} where $Y = f(\vx) + \varepsilon$ with $\Ex(\varepsilon) = 0$ and $\cov(\varepsilon) = \sigma^2 \mI$ and $f$ is a Gaussian process with mean function $m$ defined as $m(\vx) = \vx^\top \vbeta$ and covariance function $K$ where $K(\vx,\vt)$ may depend on hyperparameters $\vtheta$
+
+
+
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/linear/linear_frame.qmd >}}
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/linear/lsqregressfit.qmd >}}
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/linear/lsqregressinfer.qmd >}}
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/linear/lsqregressselect.qmd >}}
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/linear/oneway_anova.qmd >}}
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/linear/logistic_glm.qmd >}}
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/linear/gauss_process.qmd >}}

@@ -1,0 +1,44 @@
+---
+title: "MATH 563: Mathematical Statistics"
+subtitle: "Spring 2027"
+title-block-banner: false
+---
+
+::: {.key-point}
+This course website is being prepared. Tuesdays and Thursdays are assumed for both Spring courses; meeting times and rooms are TBD. Course policies and requirements await confirmation.
+:::
+
+## Course Overview
+
+Theory of sampling distributions; principles of data reduction; point and interval estimation; sufficient statistics; order statistics; hypothesis testing; correlation and linear regression; introduction to linear models.
+
+## Instructor
+
+[![]({{< meta instructor_photo >}}){.instructor-photo alt="Fred J. Hickernell"}]({{< meta instructor_photo >}})
+
+Fred J. Hickernell · Illinois Institute of Technology\
+Email: <hickernell@illinoistech.edu>
+
+Office hours and teaching-assistant details will be announced.
+
+## Planned Topics
+
+The outline follows the Spring 2026 course. Textbook selection and assessment policies will be confirmed for Spring 2027.
+
+- **Introduction and Probability Review:** Statistical inference; populations, samples, distributions, and convergence.
+- **Estimation and Confidence Intervals:** Point estimation, sampling distributions, confidence intervals, sufficiency, and optimality.
+- **Hypothesis Testing:** Likelihood ratio tests, error probabilities, power, and asymptotic inference.
+- **Linear Models:** Least squares, inference, diagnostics, ANOVA, and extensions.
+
+## Course Information
+
+| Resource | Contents |
+|:---|:---|
+| [Schedule](pages/schedule.qmd) | Draft meeting pattern and topic sequence |
+| [Slides](pages/slides.qmd) | Outline decks under construction |
+| [Notebooks](pages/notebooks.qmd) | Computational materials as they become available |
+| [Assignments](pages/homework.qmd) | Released assignments and submission instructions |
+| [Tests](pages/tests.qmd) | Assessment information when confirmed |
+| [Project](pages/project.qmd) | Project requirements and peer assessment |
+| [Resources](pages/resources.qmd) | Software, statistical questions, and access instructions |
+| [Canvas](pages/canvas.qmd) | Course link pending |

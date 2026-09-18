@@ -1,0 +1,93 @@
+---
+title: "{{< meta course_title >}}"
+deck_id: d01
+deck_title: "{{< meta decks.d01.title >}}"
+deck_short_title: "{{< meta decks.d01.short_title >}}"
+
+include-after-body:
+  - text: |
+      <script id="deck-nav-meta" type="application/json">
+      {
+        "deck_prev_file": "",
+        "deck_prev_title": "",
+        "deck_next_file": "{{< meta decks.d02.file >}}",
+        "deck_next_title": "{{< meta decks.d02.title >}}"
+      }
+      </script>
+
+subtitle: |
+  <span class="deck-meta">Spring 2026 material · revision for Spring 2027 pending</span><br>
+  <span class="deck-title">{{< meta deck_title >}}</span><br>
+  <span class="deck-meta">{{< meta texts.cb.short >}} Ch. 1–4 (parts) <br>
+  Diagnostic Quiz due 1/16 <br>
+  Assignment 2 due 1/30</span>
+format:
+  revealjs:
+    footer: "© 2027 Fred J. Hickernell · MATH 563 · Prior-semester material awaiting revision"
+---
+
+# Slide Decks for This Course
+
+- [{{< meta decks.d01.title >}}]({{< meta decks.d01.file >}})
+- [{{< meta decks.d02.title >}}]({{< meta decks.d02.file >}})
+- [{{< meta decks.d03.title >}}]({{< meta decks.d03.file >}})
+- [{{< meta decks.d04.title >}}]({{< meta decks.d04.file >}})
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/intro/how-to-read-slides.qmd >}}
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/intro/intro-stats-examples.qmd >}}
+
+
+# Class Complexion
+
+| Familiarity | Statistics | Probability | Matrix algebra | Multivariate calculus | Computer programming / coding | Proofs |
+|-------------|------------|-------------|----------------|-----------------------|-------------------------------|--------|
+| Not at all	| 1| 	0	| 0	| 0	| 0| 1
+| A bit	| 2	| 1	| 0	| 2	| 2| 2
+| Somewhat	| 5	| 4	| 4	| 2	| 5| 7
+| Rather	| 6	| 8	| 5	| 6	| 4| 2
+| Very	| 0	| 1 | 5	| 4| 	3| 2
+
+---
+
+|                    | Programming environments |
+|--------------------|--------------------------|
+Python | 14
+R  | 6
+MATLAB | 	4
+C/C++ | 	5
+Java | 1
+
+
+{{< include ../classlib/classlib/quarto/slides/shared/probability/probability-review-distrib-part-1.qmd >}}
+
+## Exponential families of distributions {#exp-families}
+
+[({{< meta texts.cb.initials >}} §3.4)]{.small}
+
+If a PMF or PDF can be expressed as
+$$
+\varrho(\vx\mid \vtheta) = h(\vx) \, c(\vtheta) \, \exp \biggl(\sum_k w_k(\vtheta) t_k(\vx) \biggr) \quad \vx \in \reals^d,
+$$
+then this is called an [exponential family]{.alert}. E.g.,
+
+
+- [Binomial]{.alert} for _fixed_ $n$ and $0 < p < 1$: $\quad \displaystyle \varrho(x) = \binom{n}{x} p^x (1-p)^{n-x} = \indic(x \in \{0, \ldots, n\}) \binom{n}{x} \, (1-p)^n \, \exp\biggl(\log\biggl(\frac{p}{1-p} \biggr ) x \biggr)$
+
+- [Exponential]{.alert}: $\quad \varrho(x) = \indic(x \ge 0) \, \exp(-\lambda x)$
+
+- [Normal (Gaussian)]{.alert}:
+$\quad \displaystyle \varrho(x) = \frac{\exp\bigl(-(x-\mu)^2/(2\sigma^2)\bigr)}{\sqrt{2 \pi} \sigma} = \frac{\exp\bigl(-\mu^2/(2\sigma^2)\bigr)}{\sqrt{2 \pi} \sigma} \, \exp\biggl(-\frac{x^2}{2 \sigma^2} + \frac{ \mu x }{\sigma^2}\biggr)$
+
+- [Multivariate Normal (Gaussian)]{.alert}:
+$$
+\varrho(\vx): = \frac{\exp\bigl(-(\vx-\vmu)^\top \mSigma^{-1} (\vx-\vmu) /2\bigr)}{\sqrt{(2 \pi)^{d} \det(\mSigma)}}=
+\frac{\exp(-\vmu^ \top\mSigma^{-1} \vmu/2 )}{\sqrt{(2 \pi)^{d} \det(\mSigma)}}
+ \, \exp\biggl(-\frac{\vx^\top \mSigma^{-1} \vx}{2} + \vmu^\top \mSigma^{-1} \vx \biggr)
+$$
+
+{{< include ../classlib/classlib/quarto/slides/shared/probability/probability-review-distrib-part-2.qmd >}}
+
+{{< include ../classlib/classlib/quarto/slides/shared/probability/conditional-prob.qmd >}}
+
+{{< include ../classlib/classlib/quarto/slides/shared/probability/converge-clt.qmd >}}

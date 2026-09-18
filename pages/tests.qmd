@@ -1,0 +1,13 @@
+---
+title: "Tests and Examinations"
+---
+
+The [draft schedule](schedule.qmd) uses the Spring 2026 pacing to propose the following assessment dates. They are tentative, with grading weights, allowed materials, and final coverage pending instructor review.
+
+| Assessment | Proposed date | Status |
+|:---|:---|:---|
+| Test 1 | Thursday, February 25, 2027 | Tentative |
+| Test 2 | Tuesday, April 6, 2027 | Tentative |
+| Final examination | May 3–8, 2027 examination period | Exact date, time, and room TBD |
+
+Released worked answers will appear here only after grading is complete.

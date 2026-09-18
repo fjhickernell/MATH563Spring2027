@@ -1,0 +1,184 @@
+---
+title: "{{< meta course_title >}}"
+deck_id: d03
+deck_title: "{{< meta decks.d03.title >}}"
+deck_short_title: "{{< meta decks.d03.short_title >}}"
+
+include-in-header:
+  - text: |
+      <meta name="apple-mobile-web-app-title" content="563 Hypothesis">
+
+include-after-body:
+  - text: |
+      <script id="deck-nav-meta" type="application/json">
+      {
+        "deck_prev_file": "{{< meta decks.d02.file >}}",
+        "deck_prev_title": "{{< meta decks.d02.title >}}",
+        "deck_next_file": "{{< meta decks.d04.file >}}",
+        "deck_next_title": "{{< meta decks.d04.title >}}"
+      }
+      </script>
+
+subtitle: |
+  <span class="deck-meta">Spring 2026 material · revision for Spring 2027 pending</span><br>
+  <span class="deck-title">{{< meta deck_title >}}</span><br>
+  <span class="deck-meta">{{< meta texts.cb.short >}} Ch. 8<br>
+  Assignment 4 due 3/13 <br>
+  Assignment 5 due 4/10 </span>
+format:
+  revealjs:
+    footer: "© 2027 Fred J. Hickernell · MATH 563 · Prior-semester material awaiting revision"
+---
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/hypothesis/hypothesis-frame.qmd >}}
+
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/hypothesis/hypothesis-examples.qmd >}}
+
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/hypothesis/likelihoodratio.qmd >}}
+
+
+## Proof of the [Neyman–Pearson lemma](#neymanpearson) (simple vs simple)
+
+$$
+H_0:\theta=\theta_0,
+\qquad
+H_A:\theta=\theta_1
+$$
+
+Let the joint densities of $\vX$ under $\theta_0$ and $\theta_1$ be
+$\varrho_0(\vx)$ and $\varrho_1(\vx)$.
+
+::: {.key-point}
+Among all tests with size $\alpha$, the likelihood ratio test is most powerful.
+:::
+
+Given data $\vX$, reject $H_0$ when
+$$
+\Lambda(\vx)
+=
+\frac{L(\theta_0\mid \vx)}{L(\theta_1\mid \vx)}
+=
+\frac{\varrho_0(\vx)}{\varrho_1(\vx)}
+< k,
+\qquad\text{i.e.}\qquad
+\varrho_0(\vx)-k\varrho_1(\vx)<0
+$$
+where $k$ is chosen so that
+$$
+\Prob(\text{Reject }H_0\mid \theta=\theta_0)=\alpha
+$$
+
+---
+
+### Proof by comparison argument
+
+For convenience of notation, we defined rejection regions [in terms of data]{.alert}, $\vX$, rather than test statistics. Let the likelihood ratio test have rejection region:
+$$
+\RR^{\LRT}=\{\vX:\ \varrho_0(\vX)-k\varrho_1(\vX)<0\}
+$$
+Thus it rejects with indicator $\indic(\vX\in \RR^{\LRT})$
+
+Let $T(\vX)$ be any other test statistic with rejection region $\RR$ (for data $\vX$)
+
+Assume this competing test has size at most $\alpha$:
+
+\begin{multline*}
+\int \indic(\vx\in\RR)\,\varrho_0(\vx)\,\dif\vx
+= \Ex [ \indic(\vX\in\RR) \mid \theta=\theta_0]
+= \Prob(\vX\in\RR\mid \theta=\theta_0)
+\\
+\le
+\alpha
+= \Prob(\vX\in\RR^{\LRT}\mid \theta=\theta_0) =
+\Ex [ \indic(\vX\in\RR^{\LRT}) \mid \theta=\theta_0] =
+\int \indic(\vx\in\RR^{\LRT})\,\varrho_0(\vx)\,\dif\vx
+\end{multline*}
+
+---
+
+Consider the integral
+$$
+I
+=
+\int
+\underbrace{\bigl[\indic(\vx\in\RR^{\LRT})-\indic(\vx\in\RR)\bigr]}_{\text{which test is rejecting?}}
+\underbrace{\bigl[\varrho_0(\vx)-k\varrho_1(\vx)\bigr]}_{\LRT \text{ will reject if this is negative}}\,\dif\vx
+$$
+
+
+### Step 1: $I\le 0$
+
+
+Check pointwise signs:
+
+- If $\vx\in\RR^{\LRT}$ but $\vx\notin\RR$, then
+  $\indic(\vx\in\RR^{\LRT})-\indic(\vx\in\RR)=1$ and
+  $\varrho_0(\vx)-k\varrho_1(\vx) < 0$,
+  so the product is $\le 0$
+
+- If $\vx\notin\RR^{\LRT}$ but $\vx\in\RR$, then
+  $\indic(\vx\in\RR^{\LRT})-\indic(\vx\in\RR)=-1$ and
+  $\varrho_0(\vx)-k\varrho_1(\vx) \ge 0$,
+  so the product is also $\le 0$
+
+- Otherwise the difference of indicators is $0$.
+
+Hence the integrand is everywhere $\le 0$, so $I\le 0$
+
+---
+
+### Step 2: Expand $I$ and use the size constraint
+
+Expand:
+\begin{multline*}
+I
+=
+\int\bigl[\indic(\vx\in\RR^{\LRT})-\indic(\vx\in\RR)\bigr]\varrho_0(\vx)\,\dif\vx
+\\
+-
+k\int\bigl[\indic(\vx\in\RR^{\LRT})-\indic(\vx\in\RR)\bigr]\varrho_1(\vx)\,\dif\vx
+\le 0
+\end{multline*}
+
+The size condition implies
+\begin{multline*}
+\int\bigl[\indic(\vx\in\RR^{\LRT})-\indic(\vx\in\RR)\bigr]\varrho_0(\vx)\,\dif\vx
+\\
+=
+\Prob(\vX\in\RR^{\LRT}\mid \theta=\theta_0)-\Prob(\vX\in\RR\mid \theta=\theta_0)
+= \alpha - \Prob(\vX\in\RR\mid \theta=\theta_0)
+\ge 0
+\end{multline*}
+
+Therefore, since $I\le 0$,
+$$
+k\int\bigl[\indic(\vx\in\RR^{\LRT})-\indic(\vx\in\RR)\bigr]\varrho_1(\vx)\,\dif\vx
+\ge
+\int\bigl[\indic(\vx\in\RR^{\LRT})-\indic(\vx\in\RR)\bigr]\varrho_0(\vx)\,\dif\vx
+\ge 0,
+$$
+
+---
+
+Because $k>0$, we have
+$$
+\int\bigl[\indic(\vx\in\RR^{\LRT})-\indic(\vx\in\RR)\bigr]\varrho_1(\vx)\,\dif\vx
+\ge 0
+$$
+
+That is,
+\begin{multline*}
+\power^{\LRT}(\theta_1) = \Prob(\vX \in \RR^{\LRT} \mid \theta=\theta_1) =
+\int \indic(\vx\in\RR^{\LRT})\,\varrho_1(\vx)\,\dif\vx \\
+\ge
+\int \indic(\vx\in\RR)\,\varrho_1(\vx)\,\dif\vx = \Prob(\vX \in \RR \mid \theta=\theta_1)= \power(\theta_1)
+\end{multline*}
+
+Therefore $\power^{\LRT}(\theta_1)\ge \power(\theta_1)$ for every test with size
+at most $\alpha$ so the likelihood ratio test is most powerful
+
+::: {.text-end}
+$\square$
+:::

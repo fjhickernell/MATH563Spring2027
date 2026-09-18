@@ -1,0 +1,93 @@
+---
+title: "{{< meta course_title >}}"
+deck_id: d02
+deck_title: "{{< meta decks.d02.title >}}"
+deck_short_title: "{{< meta decks.d02.short_title >}}"
+
+include-after-body:
+  - text: |
+      <script id="deck-nav-meta" type="application/json">
+      {
+        "deck_prev_file": "{{< meta decks.d01.file >}}",
+        "deck_prev_title": "{{< meta decks.d01.title >}}",
+        "deck_next_file": "{{< meta decks.d03.file >}}",
+        "deck_next_title": "{{< meta decks.d03.title >}}"
+      }
+      </script>
+
+subtitle: |
+  <span class="deck-meta">Spring 2026 material · revision for Spring 2027 pending</span><br>
+  <span class="deck-title">{{< meta deck_title >}}</span><br>
+  <span class="deck-meta">{{< meta texts.cb.short >}} Ch. 5–7 (parts) <br>
+  Assignment 3 due 2/13 <br>
+  Test 1 on 2/26 on <br> <span class="indent">
+  Probability Review, Estimators, & </span> <br>
+  <span class="indent">Confidence Intervals</span>
+  </span>
+format:
+  revealjs:
+    footer: "© 2027 Fred J. Hickernell · MATH 563 · Prior-semester material awaiting revision"
+---
+
+{{< include ../classlib/classlib/quarto/slides/shared/general/how_to_learn.qmd >}}
+
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/estimation/estimators.qmd >}}
+
+## Estimators for [exponential families](01-intro.html#exp-families) of distributions {#exp-families-estimators}
+
+Recall that [exponential families](01-intro.html#exp-families) of distributions have PMF or PDF of the form
+$$
+\varrho(x ; \vtheta) = h(\vx) \, c(\vtheta) \, \exp \biggl(\sum_k w_k(\vtheta) t_k(x) \biggr) \quad x \in \reals
+$$
+The binomial, exponential, and normal are all exponential families
+
+### 1. Likelihood equations depend on sample averages
+
+The log-likelihood for IID data $\vX = (X_1,\dots,X_n)$ is
+$$
+\ell(\vtheta \mid \vX) : = \log(L(\vtheta \mid \vX))
+= \sum_{i=1}^n \log \bigl(h(X_i) \bigr) + 	n \log \bigl( c(\vtheta) \bigr) +\sum_{k} w_k(\vtheta)\Biggl[ \sum_{i=1}^{n} t_k(X_i) \Biggr]
+$$
+Solving for the MLE depends on the data only through the averages: $\displaystyle \frac 1n \sum_{i=1}^{n} t_k(X_i)$
+
+- $\Bern(\mu)$ and $\Exp(\lambda)$: $\displaystyle \frac 1n \sum_{i=1}^{n} X_i$, &nbsp; &nbsp; &nbsp;  $\Norm(\mu,\sigma^2)$: $\displaystyle \frac 1n \sum_{i=1}^{n} X_i$ and $\displaystyle \frac 1n \sum_{i=1}^{n} X_i^2$
+
+---
+
+### 2. Sampling distributions are often known
+Because sums or averages of exponential family data have known
+distributions, the distribution of the estimator is often explicit
+
+- $\Bern(p)$: $n\barX \sim \text{Binomial}(n,p)$
+- $\Exp(\lambda)$: $\barX \sim \Gam(n,\;n\lambda)$ (shape–rate)
+- $\Norm(\mu,\sigma^2)$: $\barX \sim \Norm(\mu,\sigma^2/n)$
+
+
+This buys us
+
+- Exact bias and variance, e.g. for $X \sim \Exp(\lambda)$, $\hlambda_{\MLE} \exeq 1/\barX$ and $\displaystyle \Ex(\hlambda_{\MLE}) \exeq \frac{n \lambda}{n-1}$ for $n > 1$
+- Exact or near-exact confidence intervals
+
+---
+
+### 3. Bias behavior is transparent
+Although many MLEs are asymptotically unbiased, they are biased for finite sample size, but the bias is computable
+
+&nbsp;
+
+Note that
+
+$$\theta_2 = g(\theta_1) \implies \Theta_{2,\MLE} = g(\Theta_{1,\MLE})$$
+
+But
+
+$$ \Theta_{1,\MLE} \text{ unbiased } \notimplies \Theta_{2,\MLE} \text{ unbiased}$$
+
+
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/estimation/confidence.qmd >}}
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/estimation/sufficiency_completeness_information.qmd >}}
+
+{{< include ../classlib/classlib/quarto/slides/shared/statistics/estimation/predict_tolerance.qmd >}}

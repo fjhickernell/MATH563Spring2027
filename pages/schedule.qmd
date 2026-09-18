@@ -1,0 +1,93 @@
+---
+title: "Draft Schedule"
+css: ../assets/css/schedule.css
+---
+
+::: {.key-point}
+Mock schedule for Spring 2027, based on the Spring 2026 course. Both MATH 563 and MATH 574 are assumed to meet on Tuesdays and Thursdays. **Meeting times and rooms: TBD.** Topics, tests, assignment deadlines, and presentation dates below are tentative and await instructor review.
+:::
+
+## Calendar Basis
+
+The [Illinois Tech academic calendar](https://www.iit.edu/registrar/academic-calendar), checked September 18, 2026, lists Spring courses beginning January 11, Spring Break March 15–20, the last day of courses May 1, and final examinations May 3–8. Under the Tuesday/Thursday assumption, this gives **30 regular meetings from January 12 through April 29**, with no meetings on March 16 or March 18.
+
+The MLK holiday is Monday, January 18, so it does not remove a Tuesday/Thursday meeting. The final-exam schedule is due to be published March 10; the MATH 563 examination date, time, and room remain TBD.
+
+## Teaching Schedule
+
+The pacing follows 2026. Week numbers count semester calendar weeks, including Spring Break. Linked slides are carried-forward material awaiting revision; their old deadlines do not override this draft.
+
+### January
+
+| Week | Date | Topic or event | Slides / Materials |
+|---:|:---|:---|:---|
+| 1 | Tue Jan 12 | Introductory Examples,  Course Overview | [Introduction and Probability Review](../slides/01-intro.html) |
+| 1 | Thu Jan 14 | Introductory Examples, Key Probability Concepts |  |
+| 2 | Tue Jan 19 | Key Probability Concepts, Important Distributions, Conditional Probability |  |
+| 2 | Thu Jan 21 | Conditional Probability, Convergence, Central Limit Theorem |  |
+| 3 | Tue Jan 26 | Central Limit Theorem, Chebyshev's Inequality, Summary Statistics | [Estimation and Confidence Intervals](../slides/02-estimator.html) |
+| 3 | Thu Jan 28 | Summary Statistics, Maximum Likelihood Estimation, Bias, Mean Squared Error |  |
+
+### February
+
+| Week | Date | Topic or event | Slides / Materials |
+|---:|:---|:---|:---|
+| 4 | Tue Feb 2 | Distributions of estimators |  |
+| 4 | Thu Feb 4 | Confidence intervals |  |
+| 5 | Tue Feb 9 | Confidence intervals for means |  |
+| 5 | Thu Feb 11 | Confidence intervals for variances, Bootstrap confidence intervals |  |
+| 6 | Tue Feb 16 | Sufficient statistics and related topics |  |
+| 6 | Thu Feb 18 | Completeness, Rao-Blackwell, Cramér-Rao lower bound, exponential families |  |
+| 7 | Tue Feb 23 | Prediction and tolerance intervals, hypothesis testing | [Hypothesis Testing](../slides/03-hypothesis.html) |
+| 7 | Thu Feb 25 | **Test 1** |  |
+
+### March
+
+| Week | Date | Topic or event | Slides / Materials |
+|---:|:---|:---|:---|
+| 8 | Tue Mar 2 | Hypothesis testing examples, likelihood ratio tests |  |
+| 8 | Thu Mar 4 | Likelihood ratio tests |  |
+| 9 | Tue Mar 9 | Review of concepts, look at Test 1, linear models | [Linear Models](../slides/04-linear_models.html) |
+| 9 | Thu Mar 11 | Ordinary least squares |  |
+| 10 | Tue Mar 16 | **No Class, Spring Break** |  |
+| 10 | Thu Mar 18 | **No Class, Spring Break** |  |
+| 11 | Tue Mar 23 | Ordinary least squares and inference |  |
+| 11 | Thu Mar 25 | Ordinary least squares inference and diagnostics |  |
+| 12 | Tue Mar 30 | Ordinary least squares diagnostics and model selection |  |
+
+### April
+
+| Week | Date | Topic or event | Slides / Materials |
+|---:|:---|:---|:---|
+| 12 | Thu Apr 1 | Ordinary least squares model selection, one-way ANOVA |  |
+| 13 | Tue Apr 6 | **Test 2** on Optimality of Estimators, Hypothesis Testing, and Ordinary Least Squares Through Inference |  |
+| 13 | Thu Apr 8 | One-way ANOVA, logistic regression |  |
+| 14 | Tue Apr 13 | Logistic regression, generalized linear models (GLMs), Gaussian process models |  |
+| 14 | Thu Apr 15 | Gaussian process models |  |
+| 15 | Mon Apr 19 | **Project Presentation (tentative; arrangements TBD)** |  |
+| 15 | Tue Apr 20 | **Project Presentation (tentative; arrangements TBD)** |  |
+| 15 | Wed Apr 21 | **Project Presentation (tentative; arrangements TBD)** |  |
+| 15 | Thu Apr 22 | Gaussian process models |  |
+| 16 | Tue Apr 27 | Gaussian process models |  |
+| 16 | Thu Apr 29 | **Assignment 6 Due** <br>Review |  |
+
+## Tentative Submission Dates
+
+These proposed dates preserve the 2026 spacing and weekdays. They are planning placeholders, not released assignments.
+
+| Date | Proposed milestone |
+|:---|:---|
+| Fri Jan 15 | Diagnostic survey due |
+| Fri Jan 29 | Assignment 2 due |
+| Fri Feb 12 | Assignment 3 due |
+| Fri Mar 5 | Project topic submission due |
+| Fri Mar 12 | Assignment 4 due |
+| Fri Mar 26 | Presentation-slot selection deadline |
+| Fri Apr 9 | Assignment 5 due |
+| Thu Apr 29 | Assignment 6 due (included in the last meeting above) |
+
+## Final Examination
+
+**University examination period: May 3–8, 2027. MATH 563 slot and room: TBD.** No prior-semester examination time or location has been carried forward.
+
+Project presentation sessions on April 19–21 are tentative. Monday and Wednesday sessions would be additional appointments, with times and locations TBD.

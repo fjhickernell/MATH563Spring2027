@@ -1,0 +1,13 @@
+---
+title: "Lecture Slides"
+---
+
+These decks were carried forward from Spring 2026 for later revision. Prior-semester deadlines, class survey summaries, and presentation comments are historical material and do not establish Spring 2027 course requirements. Mathematical content has not yet been reviewed for the new semester.
+
+| Deck | Status |
+|:---|:---|
+| [Introduction and Probability Review](../slides/01-intro.html) | Carried forward; revision pending |
+| [Estimators and Confidence Intervals](../slides/02-estimator.html) | Carried forward; revision pending |
+| [Hypothesis Testing](../slides/03-hypothesis.html) | Carried forward; revision pending |
+| [Linear Models](../slides/04-linear_models.html) | Carried forward; revision pending |
+| [Concluding Remarks](../slides/05-conclusion.html) | Carried forward; revision pending |

@@ -1,0 +1,54 @@
+metadata-files:
+  - ../classlib/classlib/quarto/slides/hickernell-slides.yml
+  - ../classlib/classlib/quarto/metadata/hickernell-texts.yml
+
+course_title: "MATH 563 — Mathematical Statistics · Spring 2027"
+author: "Fred J. Hickernell"
+date: today
+date-format: "MMMM D, YYYY"
+
+reveal-options:
+  disableLayout: false
+
+course_website: "../"
+
+decks:
+  d01:
+    file: 01-intro.html
+    title: Introduction and Probability Review
+    short_title: Intro & Prob Review
+
+  d02:
+    file: 02-estimator.html
+    title: Estimators and Confidence Intervals
+    short_title: Estimators & CIs
+
+  d03:
+    file: 03-hypothesis.html
+    title: Hypothesis Testing
+    short_title: Hypothesis Testing
+
+  d04:
+    file: 04-linear_models.html
+    title: Linear Models
+    short_title: Linear Models
+
+  d05:
+    file: 05-conclusion.html
+    title: Concluding Remarks
+    short_title: Concluding Remarks
+
+
+format:
+  revealjs:
+    navigation-mode: grid
+    controls: true
+    html-math-method:
+      method: mathjax
+      url: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js
+
+execute:
+  warning: false
+  message: false
+  freeze: false
+  fig-path: "{basename}_files/figure-revealjs/"
