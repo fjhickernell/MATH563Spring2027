@@ -2,4 +2,4 @@
 title: "Assignments"
 ---
 
-The [draft schedule](schedule.qmd#tentative-submission-dates) proposes submission dates based on Spring 2026. Instructions, grading policies, and Canvas submission links remain pending. No Spring 2027 assignments have been released.
+No Spring 2027 assignments have been released. The [draft schedule](schedule.qmd#tentative-submission-dates) proposes submission dates based on Spring 2026; instructions, content, grading policies, and Canvas submission links remain pending.

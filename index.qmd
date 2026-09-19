@@ -30,6 +30,20 @@ The outline follows the Spring 2026 course. Textbook selection and assessment po
 - **Hypothesis Testing:** Likelihood ratio tests, error probabilities, power, and asymptotic inference.
 - **Linear Models:** Least squares, inference, diagnostics, ANOVA, and extensions.
 
+## Provisional Prerequisites and Objectives
+
+The Spring 2026 course expected multivariate calculus, linear algebra, calculus-based probability, comfort with proofs, and comfort with code. These prerequisites await confirmation for Spring 2027.
+
+Planned objectives carried forward for review are to:
+
+- distinguish population characteristics from sample estimates;
+- use probability as the basis for statistical inference;
+- evaluate estimators and hypothesis tests;
+- construct and interpret confidence intervals;
+- understand when asymptotic approximations are appropriate;
+- use Python or R for statistical computation; and
+- communicate statistical analyses through explanatory text, tables, and graphs.
+
 ## Course Information
 
 | Resource | Contents |

@@ -1,13 +1,58 @@
 ---
-title: "Tests and Examinations"
+title: Tests and Examinations
+execute:
+  echo: false
 ---
 
-The [draft schedule](schedule.qmd) uses the Spring 2026 pacing to propose the following assessment dates. They are tentative, with grading weights, allowed materials, and final coverage pending instructor review.
+The [draft schedule](schedule.qmd) uses the Spring 2026 pacing to propose Test 1 on February 25 and Test 2 on April 6. Both dates are tentative. The final-examination slot, grading weights, allowed materials, and coverage remain pending instructor review.
 
-| Assessment | Proposed date | Status |
-|:---|:---|:---|
-| Test 1 | Thursday, February 25, 2027 | Tentative |
-| Test 2 | Tuesday, April 6, 2027 | Tentative |
-| Final examination | May 3–8, 2027 examination period | Exact date, time, and room TBD |
+## Carried-Forward Test Instructions
 
-Released worked answers will appear here only after grading is complete.
+The Spring 2026 instructions below are retained for revision and are not yet Spring 2027 policy:
+
+- Tests were closed book, with a limited number of letter-sized note sheets.
+- Calculators, phones, and other electronic devices were not allowed.
+- Required critical values were provided.
+- Students showed their work and signed an integrity statement.
+
+{{< include ../classlib/classlib/quarto/snippets/search-test-archives.qmd >}}
+
+## Released MATH 563 Archive
+
+```{python}
+#| echo: false
+from pathlib import Path
+from urllib.parse import quote
+from IPython.display import Markdown, display
+
+root = Path("../assets/tests/archive/563")
+pdfs = sorted(root.glob("*.pdf"), key=lambda p: p.name.lower()) if root.exists() else []
+if not pdfs:
+    display(Markdown("*No archived MATH 563 tests found.*"))
+else:
+    display(Markdown("\n".join(
+        f"- [{p.stem.replace('_', ' ')}](../assets/tests/archive/563/{quote(p.name)})"
+        for p in pdfs
+    )))
+```
+
+## Released MATH 476 Archive (Related Material)
+
+```{python}
+#| echo: false
+from pathlib import Path
+from urllib.parse import quote
+from IPython.display import Markdown, display
+
+root = Path("../assets/tests/archive/476")
+pdfs = sorted(root.glob("*.pdf"), key=lambda p: p.name.lower()) if root.exists() else []
+if not pdfs:
+    display(Markdown("*No archived MATH 476 tests found.*"))
+else:
+    display(Markdown("\n".join(
+        f"- [{p.stem.replace('_', ' ')}](../assets/tests/archive/476/{quote(p.name)})"
+        for p in pdfs
+    )))
+```
+
+Only released answer versions appear in the archive. Spring 2027 assessments will not be published until grading is complete.

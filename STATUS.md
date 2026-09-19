@@ -23,6 +23,7 @@
 - [x] Carry forward the Spring 2026 MATH 563 project requirements and peer assessment form for both Spring courses.
 - [ ] Review scope and topic sequence with the instructor.
 - [ ] Develop and review instructional decks and computational notebooks.
+- [x] Carry forward Spring 2026 notebook candidates, test instructions/archive browser, prerequisites, and objectives for review; assignments will be developed separately for Spring 2027.
 
 ## Publication
 
@@ -30,6 +31,6 @@
 - [x] Configure the intended GitHub origin URL locally.
 - [x] Create the public GitHub repository and configure GitHub Pages.
 - [x] Commit and push the reviewed skeleton.
-- [ ] Verify the live website.
+- [x] Verify the live website and UNDER CONSTRUCTION notice.
 - [x] Register as a current active repository in SharedConfigs `settings/repositories.conf` for sync-active and repo-sweep.
-- [ ] Add shared saved-project registrations when separately authorized.
+- [x] Register Spring2027 Teaching in the shared cross-machine project manifest.
