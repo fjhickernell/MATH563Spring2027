@@ -4,7 +4,28 @@
     "href": "pages/tests.html",
     "title": "Tests and Examinations",
     "section": "",
-    "text": "UNDER CONSTRUCTIONSpring 2027 preparation is in progress. Schedules, materials, and course policies are provisional.\n\n\n\n\nThe draft schedule uses the Spring 2026 pacing to propose the following assessment dates. They are tentative, with grading weights, allowed materials, and final coverage pending instructor review.\n\n\n\n\n\n\n\n\nAssessment\nProposed date\nStatus\n\n\n\n\nTest 1\nThursday, February 25, 2027\nTentative\n\n\nTest 2\nTuesday, April 6, 2027\nTentative\n\n\nFinal examination\nMay 3–8, 2027 examination period\nExact date, time, and room TBD\n\n\n\nReleased worked answers will appear here only after grading is complete."
+    "text": "UNDER CONSTRUCTIONSpring 2027 preparation is in progress. Schedules, materials, and course policies are provisional.\nThe draft schedule uses the Spring 2026 pacing to propose Test 1 on February 25 and Test 2 on April 6. Both dates are tentative. The final-examination slot, grading weights, allowed materials, and coverage remain pending instructor review."
+  },
+  {
+    "objectID": "pages/tests.html#carried-forward-test-instructions",
+    "href": "pages/tests.html#carried-forward-test-instructions",
+    "title": "Tests and Examinations",
+    "section": "Carried-Forward Test Instructions",
+    "text": "Carried-Forward Test Instructions\nThe Spring 2026 instructions below are retained for revision and are not yet Spring 2027 policy:\n\nTests were closed book, with a limited number of letter-sized note sheets.\nCalculators, phones, and other electronic devices were not allowed.\nRequired critical values were provided.\nStudents showed their work and signed an integrity statement.\n\n\n\n\n\n\n\nTip🔎 How to search the archives (PDFs) for keywords\n\n\n\n\n\nGoal: find which past exams mention a term (e.g., Brownian, Sobol, CLT) inside PDF test and exam files.\nThe folder assets/tests/archive in the course repository contains subfolders for archived tests from past semesters for MATH 476, MATH 563, and MATH 565. The subfolders are the course numbers, e.g., archive/563 for MATH 563 tests.\n\nMac (Homebrew) / Linux\nOne-time setup (install pdfgrep):\nbrew install pdfgrep\nEach time you want to search the archive:\n\nNavigate to the root of your local course repository root, then run:\n\ncd assets/tests\n\nUse one of the following commands to search the archives:\n\nSearch all archives in this repo:\npdfgrep -rniH -C2 'your term here' archive\nSearch one specific archive folder:\npdfgrep -rniH -C2 'your term here' archive/563\nSearch multiple archives at once:\npdfgrep -rniH -C2 'your term here' archive/476 archive/563\nExamples:\npdfgrep -rniH -C2 'brownian' archive\npdfgrep -rniH -C2 'sobol' archive\npdfgrep -rniH -C2 'central limit|CLT' archive\n\n\nWindows (recommended: WSL)\nOn Windows, the recommended approach is to use Windows Subsystem for Linux (WSL), which lets you run the same commands as Mac/Linux users.\nAfter installing WSL (e.g., Ubuntu):\ncd /mnt/c/Users/YourName/path/to/course-repo/assets/tests\nsudo apt update\nsudo apt install pdfgrep\npdfgrep -rniH -C2 'your term here' archive\nIf you prefer not to use WSL, note that Windows does not include a native equivalent of pdfgrep; setup and commands vary by third-party tools."
+  },
+  {
+    "objectID": "pages/tests.html#released-math-563-archive",
+    "href": "pages/tests.html#released-math-563-archive",
+    "title": "Tests and Examinations",
+    "section": "Released MATH 563 Archive",
+    "text": "Released MATH 563 Archive\n\n\n\nMATH476 563FinalS11Answers\nMATH563FinalExamSpring2026Answers\nMATH563Test1MakeUpSpring2026Answers\nMATH563Test1S11Answers\nMATH563Test1Spring2026Answers\nMATH563Test2MakeUpSpring2026Answers\nMATH563Test2Spring2026Answers"
+  },
+  {
+    "objectID": "pages/tests.html#released-math-476-archive-related-material",
+    "href": "pages/tests.html#released-math-476-archive-related-material",
+    "title": "Tests and Examinations",
+    "section": "Released MATH 476 Archive (Related Material)",
+    "text": "Released MATH 476 Archive (Related Material)\n\n\n\nMATH476FinalExamS10Answers\nMATH476FinalExamSpring2026Answers\nMATH476FinalS11Answers\nMATH476StatFinalS06Answers\nMATH476StatTestS06Answers\nMATH476StatTestTwoS06Answers\nMATH476Test1MakeUpSpring2026Answers\nMATH476Test1S10Answers\nMATH476Test1S11Answers\nMATH476Test1Spring2026Answers\nMATH476Test2S10Answers\nMATH476Test2S11Answers\nMATH476Test2S11MakeUpAnswers\nMATH476Test2Spring2026Answers\nMATH476Test2v2S10Answers\n\n\n\nOnly released answer versions appear in the archive. Spring 2027 assessments will not be published until grading is complete."
   },
   {
     "objectID": "pages/schedule.html",
@@ -95,7 +116,7 @@
     "href": "pages/homework.html",
     "title": "Assignments",
     "section": "",
-    "text": "UNDER CONSTRUCTIONSpring 2027 preparation is in progress. Schedules, materials, and course policies are provisional.\n\n\n\n\nThe draft schedule proposes submission dates based on Spring 2026. Instructions, grading policies, and Canvas submission links remain pending. No Spring 2027 assignments have been released."
+    "text": "UNDER CONSTRUCTIONSpring 2027 preparation is in progress. Schedules, materials, and course policies are provisional.\n\n\n\n\nNo Spring 2027 assignments have been released. The draft schedule proposes submission dates based on Spring 2026; instructions, content, grading policies, and Canvas submission links remain pending."
   },
   {
     "objectID": "index.html",
@@ -124,6 +145,13 @@
     "title": "MATH 563: Mathematical Statistics",
     "section": "Planned Topics",
     "text": "Planned Topics\nThe outline follows the Spring 2026 course. Textbook selection and assessment policies will be confirmed for Spring 2027.\n\nIntroduction and Probability Review: Statistical inference; populations, samples, distributions, and convergence.\nEstimation and Confidence Intervals: Point estimation, sampling distributions, confidence intervals, sufficiency, and optimality.\nHypothesis Testing: Likelihood ratio tests, error probabilities, power, and asymptotic inference.\nLinear Models: Least squares, inference, diagnostics, ANOVA, and extensions."
+  },
+  {
+    "objectID": "index.html#provisional-prerequisites-and-objectives",
+    "href": "index.html#provisional-prerequisites-and-objectives",
+    "title": "MATH 563: Mathematical Statistics",
+    "section": "Provisional Prerequisites and Objectives",
+    "text": "Provisional Prerequisites and Objectives\nThe Spring 2026 course expected multivariate calculus, linear algebra, calculus-based probability, comfort with proofs, and comfort with code. These prerequisites await confirmation for Spring 2027.\nPlanned objectives carried forward for review are to:\n\ndistinguish population characteristics from sample estimates;\nuse probability as the basis for statistical inference;\nevaluate estimators and hypothesis tests;\nconstruct and interpret confidence intervals;\nunderstand when asymptotic approximations are appropriate;\nuse Python or R for statistical computation; and\ncommunicate statistical analyses through explanatory text, tables, and graphs."
   },
   {
     "objectID": "index.html#course-information",
@@ -214,7 +242,7 @@
     "href": "pages/notebooks.html",
     "title": "Jupyter Notebooks",
     "section": "",
-    "text": "UNDER CONSTRUCTIONSpring 2027 preparation is in progress. Schedules, materials, and course policies are provisional.\n\n\n\n\nComputational notebooks will be linked here after local execution validation and instructor review. No notebooks have been released for Spring 2027."
+    "text": "UNDER CONSTRUCTIONSpring 2027 preparation is in progress. Schedules, materials, and course policies are provisional.\n\n\n\n\nThese Spring 2026 notebooks remain available in the pinned shared library as candidates for Spring 2027. They will be designated as course materials only after local execution validation and instructor review.\n\nApproval Ratings: Bernoulli, Binomial, CLT, and Confidence Intervals\nBayesian Quadrature\nHealth, Wealth, and Life Expectancy (Gapminder)\nExact vs CLT vs Bootstrap Confidence Interval Coverage\nMatched Pairs Sleep Study"
   },
   {
     "objectID": "pages/project-assessment.html",
