@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.10.19">
 
   <meta name="author" content="Fred J. Hickernell">
-  <meta name="dcterms.date" content="2026-10-22">
+  <meta name="dcterms.date" content="2026-10-27">
   <title>MATH 563 — Mathematical Statistics · Spring 2027</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -643,7 +643,7 @@ Fred J. Hickernell
 </div>
 </div>
 
-  <p class="date">October 22, 2026</p>
+  <p class="date">October 27, 2026</p>
 </section>
 <section id="how-to-learn-this-subject" class="title-slide slide level1 center">
 <h1>How to Learn This Subject</h1>
@@ -942,7 +942,7 @@ c_{\alpha} := Q(1-\alpha),  \quad \text{i.e., } F(c_{\alpha}) \ge 1-\alpha \text
 </ul>
 <p>These <span class="alert">upper critical values</span> are <em>not</em> <span class="math inline">\(\alpha\)</span>-quantiles.</p>
 </div><div class="column" style="width:40%;">
-<div id="bf235c72" class="cell" data-fig-height="3.6" data-fig-width="4.8" data-execution_count="1">
+<div id="c7a59bc3" class="cell" data-fig-height="3.6" data-fig-width="4.8" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -984,7 +984,7 @@ c_{\alpha} := Q(1-\alpha),  \quad \text{i.e., } F(c_{\alpha}) \ge 1-\alpha \text
 <p><em>Example</em>: You observe <span class="math inline">\(\barX_n = 12.0\)</span> minutes for taxis to arrive. You construct a 95% confidence interval for the mean arrival time, <span class="math inline">\(\mu\)</span>, assuming that the arrival times are distributed <span class="math inline">\(\Exp(1/\mu)\)</span>. Recall that <span class="math inline">\(\mu = \sigma = 1/\lambda\)</span>.</p>
 <div class="columns">
 <div class="column" style="width:58%;">
-<div id="534d3a91" class="cell" data-dpi="220" data-fig-height="4.6" data-fig-width="9" data-execution_count="3">
+<div id="d9cc75f6" class="cell" data-dpi="220" data-fig-height="4.6" data-fig-width="9" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -994,7 +994,7 @@ c_{\alpha} := Q(1-\alpha),  \quad \text{i.e., } F(c_{\alpha}) \ge 1-\alpha \text
 </div>
 </div>
 </div><div class="column" style="width:42%;">
-<div id="a3ad91c3" class="cell" data-dpi="220" data-fig-height="4.6" data-fig-width="6.5" data-execution_count="4">
+<div id="6f20e374" class="cell" data-dpi="220" data-fig-height="4.6" data-fig-width="6.5" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1027,7 +1027,7 @@ c_{\alpha} := Q(1-\alpha),  \quad \text{i.e., } F(c_{\alpha}) \ge 1-\alpha \text
 &amp;= \Prob \biggl( \frac{2 n \barX_n}{\chi^2_{2n,\,\alpha/2}} \le \mu \le \frac{2 n \barX_n}{\chi^2_{2n,\,1-\alpha/2}} \biggr),
 \end{align*}\]</span></p>
 </div><div class="column" style="width:40%;">
-<div id="618c2697" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="6">
+<div id="500351de" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="6">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -1041,7 +1041,7 @@ c_{\alpha} := Q(1-\alpha),  \quad \text{i.e., } F(c_{\alpha}) \ge 1-\alpha \text
 <section class="slide level2">
 
 <h3 id="exact-vs-clt-sampling-distribution-of-overlinex-when-x_i-sim-exp1mu">Exact vs CLT sampling distribution of <span class="math inline">\(\overline{X}\)</span>, when <span class="math inline">\(X_i \sim \Exp(1/\mu)\)</span></h3>
-<div id="85ebb797" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="7">
+<div id="562551df" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="7">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -1056,7 +1056,7 @@ c_{\alpha} := Q(1-\alpha),  \quad \text{i.e., } F(c_{\alpha}) \ge 1-\alpha \text
 <h3 id="exact-vs-clt-confidence-intervals-for-mu-when-x_i-sim-exp1mu-two-sample-sizes">Exact vs CLT confidence intervals for <span class="math inline">\(\mu\)</span>, when <span class="math inline">\(X_i \sim \Exp(1/\mu)\)</span> (two sample sizes)</h3>
 <div class="columns">
 <div class="column" style="width:65%;">
-<div id="7538472d" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="8">
+<div id="c7aff6fd" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="8">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -1094,7 +1094,7 @@ c_{\alpha} := Q(1-\alpha),  \quad \text{i.e., } F(c_{\alpha}) \ge 1-\alpha \text
 <p>Student’s <span class="math inline">\(t\)</span> CIs are <span class="alert">wider</span> than CLT Normal CIs for small <span class="math inline">\(n\)</span> because <span class="math inline">\(t_{n-1,\alpha/2} &gt; z_{\alpha/2}\)</span></p>
 <p>But they are <span class="alert">exact</span> and thus more accurate for all <span class="math inline">\(n \ge 2\)</span> when the data are Normal</p>
 </div><div class="column" style="width:70%;">
-<div id="055cbc29" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="9">
+<div id="74405829" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="9">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -1453,10 +1453,10 @@ Sample mean
 <strong>Original</strong>
 </td>
 <td>
-7.04, 1.66, 3.93, 6.06, 2.28, 1.98, 5.58, 0.05
+0.40, 1.65, 0.95, 2.23, 1.11, 3.90, 0.52, 0.33
 </td>
 <td>
-3.57
+1.39
 </td>
 </tr>
 <tr>
@@ -1464,10 +1464,10 @@ Sample mean
 Bootstrap 1
 </td>
 <td>
-7.04, 0.05, 1.66, 2.28, 3.93, 1.66, 7.04, 1.66
+1.65, 2.23, 0.40, 3.90, 1.65, 0.95, 0.95, 0.52
 </td>
 <td>
-3.16
+1.53
 </td>
 </tr>
 <tr>
@@ -1475,10 +1475,10 @@ Bootstrap 1
 Bootstrap 2
 </td>
 <td>
-6.06, 2.28, 1.66, 3.93, 1.98, 2.28, 3.93, 1.66
+0.33, 1.11, 0.52, 1.65, 2.23, 0.52, 3.90, 2.23
 </td>
 <td>
-2.97
+1.56
 </td>
 </tr>
 <tr>
@@ -1486,10 +1486,10 @@ Bootstrap 2
 Bootstrap 3
 </td>
 <td>
-6.06, 0.05, 1.66, 2.28, 5.58, 6.06, 0.05, 2.28
+0.40, 2.23, 0.33, 0.33, 3.90, 1.11, 0.95, 0.52
 </td>
 <td>
-3.00
+1.22
 </td>
 </tr>
 <tr>
@@ -1497,10 +1497,10 @@ Bootstrap 3
 Bootstrap 4
 </td>
 <td>
-0.05, 7.04, 6.06, 7.04, 2.28, 7.04, 5.58, 1.98
+1.11, 3.90, 2.23, 0.95, 0.95, 0.52, 3.90, 2.23
 </td>
 <td>
-4.63
+1.98
 </td>
 </tr>
 <tr>
@@ -2235,7 +2235,7 @@ T(\vX) := \left(\sum_{i=1}^n t_1(X_i),  \sum_{i=1}^n t_2(X_i), \ldots \right) \t
 </section>
 <section id="manufacturing-example-parameterized" class="slide level2">
 <h2>Manufacturing example (parameterized)</h2>
-<div id="f82c5f72" class="cell" data-message="false" data-execution_count="12">
+<div id="70b3627a" class="cell" data-message="false" data-execution_count="12">
 <div class="cell-output cell-output-display cell-output-markdown">
 <ul>
 <li><span class="math inline">\(n=25\)</span>, <span class="math inline">\(\barx=10.0200\)</span>, <span class="math inline">\(s=0.2000\)</span></li>
@@ -2254,7 +2254,7 @@ T(\vX) := \left(\sum_{i=1}^n t_1(X_i),  \sum_{i=1}^n t_2(X_i), \ldots \right) \t
 </section>
 <section class="slide level2">
 
-<div id="a0edbfd7" class="cell" data-message="false" data-execution_count="13">
+<div id="720f2650" class="cell" data-message="false" data-execution_count="13">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -2536,6 +2536,7 @@ T(\vX) := \left(\sum_{i=1}^n t_1(X_i),  \sum_{i=1}^n t_2(X_i), \ldots \right) \t
         // When h changes, keep forcing v=0 for a short window (ms).
         let lockH = null;
         let lockUntil = 0;
+        let linkedTarget = null;
 
         function nowMs() {
           return (typeof performance !== "undefined" && performance.now) ? performance.now() : Date.now();
@@ -2546,14 +2547,49 @@ T(\vX) := \left(\sum_{i=1}^n t_1(X_i),  \sum_{i=1}^n t_2(X_i), \ldots \right) \t
           lockUntil = nowMs() + ms;
         }
 
+        function preserveHashTarget(requestedHash) {
+          // Named headings can be inside a continuation slide rather than on
+          // its section element. Resolve the containing slide before navigation.
+          const isHashChange = requestedHash && typeof requestedHash.newURL === "string";
+          const requested = isHashChange ? new URL(requestedHash.newURL).hash : requestedHash;
+          const hash = (typeof requested === "string" ? requested : window.location.hash).replace(/^#\/?/, "");
+          if (!hash) return;
+          let destination;
+          if (/^\d+(\/\d+)?(\/\d+)?$/.test(hash)) {
+            const parts = hash.split("/").map(Number);
+            destination = { h: parts[0], v: parts[1] || 0, f: parts[2] };
+          } else {
+            let target;
+            try { target = document.getElementById(decodeURIComponent(hash)); }
+            catch (_) { return; }
+            const slide = target && target.closest("section.slide");
+            if (!slide) return;
+            destination = Reveal.getIndices(slide);
+          }
+          linkedTarget = { h: destination.h, v: destination.v || 0, until: nowMs() + 1000 };
+          lockH = null;
+          if (isHashChange) Reveal.slide(destination.h, destination.v || 0, destination.f);
+        }
+
         function snapTopIfNeeded(tag) {
           if (!window.Reveal || !Reveal.getIndices || !Reveal.slide) return;
+          if (Reveal.isReady && !Reveal.isReady()) return;
 
           if (Reveal.isOverview && Reveal.isOverview()) return;
           if (Reveal.isPaused && Reveal.isPaused()) return;
 
           const idx = Reveal.getIndices();
           const t = nowMs();
+
+          // A deliberate hash jump must retain its requested vertical slide.
+          // Arrow navigation still starts a new horizontal section at its top.
+          if (linkedTarget && t <= linkedTarget.until && idx.h === linkedTarget.h) {
+            prevH = idx.h;
+            lockH = null;
+            if (idx.v === linkedTarget.v) linkedTarget = null;
+            return;
+          }
+          if (linkedTarget && t > linkedTarget.until) linkedTarget = null;
 
           // Detect any horizontal move (either direction) and start a lock.
           if (prevH === null) {
@@ -2585,7 +2621,18 @@ T(\vX) := \left(\sum_{i=1}^n t_1(X_i),  \sum_{i=1}^n t_2(X_i), \ldots \right) \t
           Reveal.on("ready", function () { snapTopIfNeeded("ready"); });
         }
 
+        // Capture runs before Reveal reads the new hash, including browser
+        // back/forward and same-document links to another section's child slide.
+        window.addEventListener("hashchange", preserveHashTarget, true);
         window.addEventListener("hashchange", function () { snapTopIfNeeded("hashchange"); });
+        document.addEventListener("click", function (event) {
+          const link = event.target.closest && event.target.closest("a[href]");
+          if (!link) return;
+          const url = new URL(link.href, window.location.href);
+          if (url.origin === window.location.origin && url.pathname === window.location.pathname && url.search === window.location.search) {
+            preserveHashTarget(url.hash);
+          }
+        }, true);
 
         // Safari/WebKit occasionally fails to repaint Reveal slides after focus returns.
         const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
