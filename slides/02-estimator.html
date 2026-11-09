@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.11.9">
 
   <meta name="author" content="Fred J. Hickernell">
-  <meta name="dcterms.date" content="2026-11-03">
+  <meta name="dcterms.date" content="2026-11-09">
   <title>MATH 563 — Mathematical Statistics · Spring 2027</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -643,7 +643,7 @@ Fred J. Hickernell
 </div>
 </div>
 
-  <p class="date">November 3, 2026</p>
+  <p class="date">November 9, 2026</p>
 </section>
 <section id="how-to-learn-this-subject" class="title-slide slide level1 center">
 <h1>How to Learn This Subject</h1>
@@ -942,7 +942,7 @@ c_{\alpha} := Q(1-\alpha),  \quad \text{i.e., } F(c_{\alpha}) \ge 1-\alpha \text
 </ul>
 <p>These <span class="alert">upper critical values</span> are <em>not</em> <span class="math inline">\(\alpha\)</span>-quantiles.</p>
 </div><div class="column" style="width:40%;">
-<div id="ae573ada" class="cell" data-fig-height="3.6" data-fig-width="4.8" data-execution_count="1">
+<div id="7f23a6bc" class="cell" data-fig-height="3.6" data-fig-width="4.8" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -984,7 +984,7 @@ c_{\alpha} := Q(1-\alpha),  \quad \text{i.e., } F(c_{\alpha}) \ge 1-\alpha \text
 <p><em>Example</em>: You observe <span class="math inline">\(\barX_n = 12.0\)</span> minutes for taxis to arrive. You construct a 95% confidence interval for the mean arrival time, <span class="math inline">\(\mu\)</span>, assuming that the arrival times are distributed <span class="math inline">\(\Exp(1/\mu)\)</span>. Recall that <span class="math inline">\(\mu = \sigma = 1/\lambda\)</span>.</p>
 <div class="columns">
 <div class="column" style="width:58%;">
-<div id="066e9dd8" class="cell" data-dpi="220" data-fig-height="4.6" data-fig-width="9" data-execution_count="3">
+<div id="cab5841e" class="cell" data-dpi="220" data-fig-height="4.6" data-fig-width="9" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -994,7 +994,7 @@ c_{\alpha} := Q(1-\alpha),  \quad \text{i.e., } F(c_{\alpha}) \ge 1-\alpha \text
 </div>
 </div>
 </div><div class="column" style="width:42%;">
-<div id="bba6898f" class="cell" data-dpi="220" data-fig-height="4.6" data-fig-width="6.5" data-execution_count="4">
+<div id="b98b5a36" class="cell" data-dpi="220" data-fig-height="4.6" data-fig-width="6.5" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1027,7 +1027,7 @@ c_{\alpha} := Q(1-\alpha),  \quad \text{i.e., } F(c_{\alpha}) \ge 1-\alpha \text
 &amp;= \Prob \biggl( \frac{2 n \barX_n}{\chi^2_{2n,\,\alpha/2}} \le \mu \le \frac{2 n \barX_n}{\chi^2_{2n,\,1-\alpha/2}} \biggr),
 \end{align*}\]</span></p>
 </div><div class="column" style="width:40%;">
-<div id="febe756a" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="6">
+<div id="06ea5e96" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="6">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -1041,7 +1041,7 @@ c_{\alpha} := Q(1-\alpha),  \quad \text{i.e., } F(c_{\alpha}) \ge 1-\alpha \text
 <section class="slide level2">
 
 <h3 id="exact-vs-clt-sampling-distribution-of-overlinex-when-x_i-sim-exp1mu">Exact vs CLT sampling distribution of <span class="math inline">\(\overline{X}\)</span>, when <span class="math inline">\(X_i \sim \Exp(1/\mu)\)</span></h3>
-<div id="8d14fedd" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="7">
+<div id="767af1d8" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="7">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -1056,7 +1056,7 @@ c_{\alpha} := Q(1-\alpha),  \quad \text{i.e., } F(c_{\alpha}) \ge 1-\alpha \text
 <h3 id="exact-vs-clt-confidence-intervals-for-mu-when-x_i-sim-exp1mu-two-sample-sizes">Exact vs CLT confidence intervals for <span class="math inline">\(\mu\)</span>, when <span class="math inline">\(X_i \sim \Exp(1/\mu)\)</span> (two sample sizes)</h3>
 <div class="columns">
 <div class="column" style="width:65%;">
-<div id="01946374" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="8">
+<div id="9a27d12a" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="8">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -1094,7 +1094,7 @@ c_{\alpha} := Q(1-\alpha),  \quad \text{i.e., } F(c_{\alpha}) \ge 1-\alpha \text
 <p>Student’s <span class="math inline">\(t\)</span> CIs are <span class="alert">wider</span> than CLT Normal CIs for small <span class="math inline">\(n\)</span> because <span class="math inline">\(t_{n-1,\alpha/2} &gt; z_{\alpha/2}\)</span></p>
 <p>But they are <span class="alert">exact</span> and thus more accurate for all <span class="math inline">\(n \ge 2\)</span> when the data are Normal</p>
 </div><div class="column" style="width:70%;">
-<div id="caf7d6bd" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="9">
+<div id="731d14ac" class="cell" data-fig-height="3.4" data-fig-width="6.8" data-execution_count="9">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -1453,10 +1453,10 @@ Sample mean
 <strong>Original</strong>
 </td>
 <td>
-2.31, 2.69, 1.30, 1.82, 0.86, 0.36, 0.64, 2.99
+6.29, 0.65, 0.89, 4.84, 1.74, 1.12, 2.71, 3.14
 </td>
 <td>
-1.62
+2.67
 </td>
 </tr>
 <tr>
@@ -1464,10 +1464,10 @@ Sample mean
 Bootstrap 1
 </td>
 <td>
-0.86, 2.31, 0.36, 1.30, 0.36, 0.36, 2.69, 2.31
+2.71, 3.14, 0.65, 0.89, 1.12, 1.74, 1.74, 3.14
 </td>
 <td>
-1.32
+1.89
 </td>
 </tr>
 <tr>
@@ -1475,10 +1475,10 @@ Bootstrap 1
 Bootstrap 2
 </td>
 <td>
-0.86, 2.69, 1.30, 2.99, 0.86, 0.64, 2.31, 1.30
+3.14, 4.84, 0.89, 6.29, 0.65, 0.65, 1.12, 2.71
 </td>
 <td>
-1.62
+2.54
 </td>
 </tr>
 <tr>
@@ -1486,10 +1486,10 @@ Bootstrap 2
 Bootstrap 3
 </td>
 <td>
-2.69, 0.64, 2.31, 1.82, 2.69, 2.69, 2.69, 0.64
+0.65, 6.29, 1.74, 6.29, 6.29, 0.65, 2.71, 3.14
 </td>
 <td>
-2.02
+3.47
 </td>
 </tr>
 <tr>
@@ -1497,10 +1497,10 @@ Bootstrap 3
 Bootstrap 4
 </td>
 <td>
-0.86, 2.99, 0.36, 0.86, 0.36, 1.82, 0.36, 0.86
+2.71, 4.84, 1.12, 1.12, 3.14, 1.12, 3.14, 6.29
 </td>
 <td>
-1.06
+2.94
 </td>
 </tr>
 <tr>
@@ -2235,7 +2235,7 @@ T(\vX) := \left(\sum_{i=1}^n t_1(X_i),  \sum_{i=1}^n t_2(X_i), \ldots \right) \t
 </section>
 <section id="manufacturing-example-parameterized" class="slide level2">
 <h2>Manufacturing example (parameterized)</h2>
-<div id="766809cf" class="cell" data-message="false" data-execution_count="12">
+<div id="f866ca58" class="cell" data-message="false" data-execution_count="12">
 <div class="cell-output cell-output-display cell-output-markdown">
 <ul>
 <li><span class="math inline">\(n=25\)</span>, <span class="math inline">\(\barx=10.0200\)</span>, <span class="math inline">\(s=0.2000\)</span></li>
@@ -2254,7 +2254,7 @@ T(\vX) := \left(\sum_{i=1}^n t_1(X_i),  \sum_{i=1}^n t_2(X_i), \ldots \right) \t
 </section>
 <section class="slide level2">
 
-<div id="7d654c83" class="cell" data-message="false" data-execution_count="13">
+<div id="5f0d8aaf" class="cell" data-message="false" data-execution_count="13">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
