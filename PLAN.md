@@ -24,7 +24,7 @@ Private assessments use the shared fh-exam workflow in a separate private worksp
 
 ## Schedule Assumptions
 
-Assume Tuesday/Thursday meetings for both Spring courses, with times and rooms TBD. The official Illinois Tech calendar, checked September 18, 2026, gives Spring Break March 15–20 and the examination period May 3–8. MATH 563 uses the 2026 pacing to mock up 30 meetings from January 12 to April 29; proposed assessment and submission dates are tentative.
+MATH 563 retains the Tuesday/Thursday meeting assumption, with time and room TBD. MATH 574 meets Tuesday and Thursday, 11:25 AM–12:40 PM; its room will be announced. The official Illinois Tech calendar, checked September 18, 2026, gives Spring Break March 15–20 and the examination period May 3–8. MATH 563 uses the 2026 pacing to mock up 30 meetings from January 12 to April 29; proposed assessment and submission dates are tentative.
 
 ## Course Projects
 

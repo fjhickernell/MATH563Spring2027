@@ -17,7 +17,7 @@
 
 ## Course Preparation
 
-- [x] Verify the official Spring 2027 academic calendar and record the shared Tuesday/Thursday assumption.
+- [x] Verify the official Spring 2027 academic calendar and record the MATH 563 Tuesday/Thursday assumption.
 - [ ] Confirm official course times, rooms, and final examination slots.
 - [ ] Confirm Canvas course, staffing, textbooks, and assessment policies.
 - [x] Carry forward the Spring 2026 MATH 563 project requirements and peer assessment form for both Spring courses.

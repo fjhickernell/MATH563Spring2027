@@ -5,7 +5,7 @@
 
 Quarto course website and teaching-material skeleton for Illinois Tech, taught by Fred J. Hickernell.
 
-This repository is under construction. The Tuesday/Thursday meeting assumption is recorded for both courses, with times and rooms TBD. MATH 563 has a mock dated schedule based on Spring 2026; assessment policies, Canvas links, and staffing remain unconfirmed.
+This repository is under construction. MATH 563 retains the Tuesday/Thursday meeting assumption, with time and room TBD. MATH 574 meets Tuesday and Thursday, 11:25 AM–12:40 PM; its room will be announced. MATH 563 has a mock dated schedule based on Spring 2026; assessment policies, Canvas links, and staffing remain unconfirmed.
 
 ## Local Setup
 
